@@ -38,6 +38,6 @@ Enter your credentials
 pico config/credentials.json
 ```
 
-# Provided as-is
+# Provided As-Is :warning:
 
 Keybroker is not affiliated with Custobar. Custobar may change their endpoints and data structures at any time. Keybroker does not take any responsibility for the correctness, format or quality of the returned data from this package. It is provided as-is.
