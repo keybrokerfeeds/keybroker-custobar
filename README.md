@@ -15,7 +15,9 @@ npm start
 #### Available environment variables
 Variable | Description | Required | Default value
 :---:|:---:|:---:|:---:
-None|at|the|moment
+CUSTOBAR_RECEIVER|Email adress the export mail will be sent to|For mail|N/A
+CUSTOBAR_RECEIVER_CC|cc email adress|For mail|N/A
+POSTMARK_API_KEY|API token for Postmark App account|For mail|N/A
 
 ### How to build
 Clone the GitHub repo

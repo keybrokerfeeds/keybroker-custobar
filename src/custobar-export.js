@@ -103,6 +103,7 @@ class custobarExport {
 				for (var i = 0; i < dateArray.length; i++) {
 					let tmp = {
 						date: dateArray[i],
+						source: 'Custobar email',
 						name: this._campaigns[dateArray[i]] ? this._campaigns[dateArray[i]].name : ''
 					}
 
