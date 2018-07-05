@@ -2,7 +2,7 @@
 
 ### Features
 * Class :wrench: that collects all the dashboard :chart_with_upwards_trend: data and returns it in a json format
-* Example implemention in _index.js_ that prints a csv table :scroll:
+* Example implemention in `index.js` that prints a csv table :scroll:
 
 ### How to use
 
@@ -20,7 +20,7 @@ None|at|the|moment
 ### How to build
 Clone the GitHub repo
 ```
-git clone https://github.com/keybroker/keybroker-custobar.git
+git clone https://github.com/keybrokerfeeds/keybroker-custobar.git
 ```
 
 Change current directory
