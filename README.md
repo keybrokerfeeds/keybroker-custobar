@@ -35,6 +35,7 @@ npm install
 
 Enter your credentials
 ```
+mv credentials_template.json credentials.json
 pico config/credentials.json
 ```
 
