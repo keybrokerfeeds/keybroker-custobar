@@ -41,6 +41,31 @@ mv credentials_template.json credentials.json
 pico config/credentials.json
 ```
 
+### Deploy to AWS Lambda with Serverless
+Create an AWS account
+
+Install Serverless and follow the instructions to set up your AWS credentials
+```
+npm install -g serverless
+```
+
+Update environment variables in the Serverless configuration file
+```
+mv serverless_template.yml serverless.yml
+pico serverless.yml
+```
+
+Deploy service
+```
+sls deploy
+```
+
+Test your export service
+```
+sls invoke -f exportCustobarDataByMail -l
+```
+
+
 # Provided As-Is :warning:
 
 Keybroker is not affiliated with Custobar. Custobar may change their endpoints and data structures at any time. Keybroker does not take any responsibility for the correctness, format or quality of the returned data from this package. It is provided as-is.

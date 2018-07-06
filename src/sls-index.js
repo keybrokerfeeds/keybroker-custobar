@@ -5,16 +5,18 @@
 
 const Mail = require('./mail')
 const Console = require('./console')
+const Logger = require("modern-logger")
 
 module.exports = {
 	outputAsMail: (event, context, callback) => {
 		Mail.run()
 		.then(() => {
-			callback(null, {success: true})
+			Logger.info("[CUSTOBAR] Export OK", "Stage:", process.env.myStage, "Region:", process.env.myRegion)
+			return callback(null, {success: true})
 		})
 		.catch((err) => {
-			console.error(err)
-			callback(err, {success: false})
+			Logger.error("[CUSTOBAR] Error", "Stage:", process.env.myStage, "Region:", process.env.myRegion, err)
+			return callback(err, {success: false})
 		})
 	},
 	outputOnConsole: (event, context, callback) => {
@@ -23,10 +25,13 @@ module.exports = {
 			callback(null, {success: true})
 		})
 		.catch((err) => {
-			console.error(err)
+			Logger.error(err)
 			callback(err, {success: false})
 		})
 	}
 }
 
-module.exports.outputOnConsole({},{}, (err, result) => { console.log(err, result)} )
+// Uncomment to test
+// module.exports.outputAsMail({}, {},function(err, result) {
+// 	Logger.info(err,result)
+// })

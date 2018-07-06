@@ -12,8 +12,11 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "cheerio": "^1.0.0-rc.2",
+    "modern-logger": "^1.5.20",
     "moment": "^2.22.2",
     "postmark": "^1.6.1",
-    "request-promise": "^4.2.2"
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "serverless-plugin-include-dependencies": "^3.1.0"
   }
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 const Postmark = require('postmark');
-const { POSTMARK_API_KEY } = require('../../config/credentials')
+const { POSTMARK_API_KEY } = require('../../config/credentials.json')
 
 const client = new Postmark.Client(process.env.POSTMARK_API_KEY || POSTMARK_API_KEY);
 
