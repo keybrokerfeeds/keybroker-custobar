@@ -2,7 +2,8 @@
 
 ### Features
 * Class :wrench: that collects all the dashboard :chart_with_upwards_trend: data and returns it in a json format
-* Example implemention in `index.js` that prints a csv table :scroll:
+* Logs in with your credentials and sets a session cookie to allow you to fetch protected :key: URLs :link:
+* Send output as mail :email: to set up as cron tab :clock2: and/or Serverless :zap:
 
 ### How to use
 
@@ -65,6 +66,8 @@ Test your export service
 sls invoke -f exportCustobarDataByMail -l
 ```
 
+# To do
+* Generalise to fetch URLs from any password protected site
 
 # Provided As-Is :warning:
 
