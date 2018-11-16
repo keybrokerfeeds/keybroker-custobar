@@ -2,7 +2,8 @@
 
 ### Features
 * Class :wrench: that collects all the dashboard :chart_with_upwards_trend: data and returns it in a json format
-* Example implemention in `index.js` that prints a csv table :scroll:
+* Logs in with your credentials and sets a session cookie to allow you to fetch protected :key: URLs :link:
+* Send output as mail :email: to set up as cron tab :clock2: and/or Serverless :zap:
 
 ### How to use
 
@@ -65,7 +66,12 @@ Test your export service
 sls invoke -f exportCustobarDataByMail -l
 ```
 
+# To do
+* Generalise to fetch URLs from any password protected site
 
 # Provided As-Is :warning:
 
 Keybroker is not affiliated with Custobar. Custobar may change their endpoints and data structures at any time. Keybroker does not take any responsibility for the correctness, format or quality of the returned data from this package. It is provided as-is.
+
+# About [Keybroker](https://keybroker.se)
+Keybroker ensures that people always finds your products and services. Keybroker are specialists at optimising your digital customer acquisition channels (SEO, SEM, Social, Programmatic, YouTube, Email) and converting customer and market insights to triggers enabling your growth today. We are your digital growth engine :rocket:
