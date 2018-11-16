@@ -23,7 +23,7 @@ class custobarExport {
 
 	populate (credentialsPath, startDate, endDate) {
 		const { username, password, shop } = require(credentialsPath)
-		 startDate = startDate ? startDate : moment().subtract(90, 'days') // '2018-07-01'
+		 startDate = startDate ? startDate : moment().subtract(89, 'days') // '2018-07-01'
 		 endDate = endDate ? endDate : moment() // Default to now
 
 		const dateArray = buildDateArray(startDate, endDate)
